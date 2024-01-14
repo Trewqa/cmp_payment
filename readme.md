@@ -75,6 +75,16 @@ Add this code snippet after `<body>` tag on your site.
 #### Wordpress
 Usually `<body>` tag is on your `header.php` theme file.
 
+## Images
+
+### Mobile
+![image](https://github.com/Trewqa/cmp_payment/assets/3149775/5944568f-094b-427d-9f06-21fc346f1d72)
+![image](https://github.com/Trewqa/cmp_payment/assets/3149775/404dc086-7fe5-4b70-8a76-fc474d2deafd)
+
+### PC
+![image](https://github.com/Trewqa/cmp_payment/assets/3149775/d32395b7-3234-4ef2-9930-417dabe76496)
+
+
 ## Important Considerations
 
 After making the payment, PayPal immediately notifies the payment, but in some cases it may take a few minutes to notify the payment, so until then the code will not be reflected in the database.
