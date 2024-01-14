@@ -69,7 +69,7 @@ $email = "contact@example.com"; // Change this with your contact email
 ### Uso
 Agregue este fragmento de código después de la etiqueta `<body>` en su sitio.
 ```php
-<?php include __DIR__.'/cmp_payment/cmp_payment.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'].'/cmp_payment/cmp_payment.php'; ?>
 ```
 
 #### Wordpress
