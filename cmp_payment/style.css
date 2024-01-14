@@ -1,0 +1,88 @@
+#paymentModal, #paymentModal_cancel, #paymentModal_token {
+    font-family: Helvetica,Arial,sans-serif;;
+
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+
+    display: none;
+}
+
+#paymentModal button {
+    background: #333333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#paymentModal input {
+    padding: 7px;
+    margin-bottom: 5px;
+}
+
+#paypal_form div {
+    background: gold;
+    border-radius: 5px;
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 150px;
+}
+
+#paymentModalContent {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#paymentModalContent_cancel, #paymentModalContent_token {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 10px;
+
+    position: relative;
+}
+
+#cmp_payment_cancel_close_btn, #cmp_payment_token_close_btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: rgb(0 0 0 / 9%);
+    border: 1px solid grey;
+    border-radius: 50px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.paymentContent, .acceptContent {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.acceptContent button {
+    font-size: 1.1rem;
+}
