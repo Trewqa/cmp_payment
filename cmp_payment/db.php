@@ -3,10 +3,10 @@ ini_set('display_errors', '1');
 ini_set('display_startup_errors', '1');
 error_reporting(E_ALL);
 
-$host = '127.0.0.1';
-$user = 'mysql_user';
-$password = 'mysql_password';
-$database = 'mysql_database';
+$cmp_paymeny_db_host = '127.0.0.1';
+$cmp_paymeny_db_user = 'mysql_user';
+$cmp_paymeny_db_password = 'mysql_password';
+$cmp_paymeny_db_database = 'mysql_database';
 
 $paypal_email = "sb-ceaol29158626@business.example.com";
 
@@ -14,7 +14,7 @@ global $pdo;
 
 try {
 
-    $pdo = new PDO("mysql:host=$host;dbname=$database", $user, $password);
+    $pdo = new PDO("mysql:host=$cmp_paymeny_db_host;dbname=$cmp_paymeny_db_database", $cmp_paymeny_db_user, $cmp_paymeny_db_password);
     
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
